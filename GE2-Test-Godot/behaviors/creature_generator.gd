@@ -21,7 +21,7 @@ func _process(delta):
 		DebugDraw3D.draw_box(Vector3(-current_size/2 + position_offset.x,-current_size/2+position_offset.y,-current_size/2+position_offset.z), Quaternion(), Vector3(current_size,current_size,current_size))
 		position_offset.x+=current_size
 		#position_offset.y = sin(x)
-		current_size += sin(x*frequency+start_angle) * 0.3
+		current_size += sin(x*frequency+start_angle) * 0.1 * multiplier
 
 	
 	pass		
