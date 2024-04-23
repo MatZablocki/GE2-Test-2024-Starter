@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://q1fcos8u5tqf"]
+[gd_scene load_steps=3 format=3 uid="uid://q1fcos8u5tqf"]
+
+[ext_resource type="Script" path="res://behaviors/Harmonic.gd" id="1_eyryf"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_kfkd4"]
 radius = 1.0
@@ -9,3 +11,6 @@ radius = 1.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_kfkd4")
+
+[node name="SteeringBehavior" type="Node" parent="."]
+script = ExtResource("1_eyryf")
