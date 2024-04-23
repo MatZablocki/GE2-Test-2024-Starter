@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://q1fcos8u5tqf"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_kfkd4"]
+radius = 1.0
+
+[node name="head" type="CharacterBody3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_kfkd4")
