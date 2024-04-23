@@ -12,6 +12,7 @@ func _input(event):
 func on_draw_gizmos():
 	var size = 5000
 	var sub_divisions = size / 100
+	print("Hello world!")
 	DebugDraw3D.draw_grid(Vector3.ZERO, Vector3.RIGHT* size, Vector3.BACK * size, Vector2(sub_divisions, sub_divisions), Color.WHITE)
 	
 	# DebugDraw.draw_grid(Vector3.ZERO, Vector3.UP * size, Vector3.BACK * size, Vector2(sub_divisions, sub_divisions), Color.aquamarine)
